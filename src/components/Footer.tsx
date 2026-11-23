@@ -75,6 +75,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs font-mono text-text-secondary">
               <li>
+                <Link href="/#about" className="hover:text-text-primary transition-colors flex items-center space-x-1.5">
+                  <span className="text-electric-yellow">&gt;</span>
+                  <span>About Me &amp; Philosophy</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/#identity" className="hover:text-text-primary transition-colors flex items-center space-x-1.5">
                   <span className="text-electric-yellow">&gt;</span>
                   <span>Electromagnetic Field Core</span>

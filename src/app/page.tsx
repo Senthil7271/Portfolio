@@ -1,5 +1,6 @@
 import TeslaTowerIntro from "@/components/intro/TeslaTowerIntro";
 import TeslaHero from "@/components/hero/TeslaHero";
+import AboutMeSection from "@/components/sections/AboutMeSection";
 import MagneticFieldSection from "@/components/sections/MagneticFieldSection";
 import CylindricalProjectCarousel from "@/components/carousel/CylindricalProjectCarousel";
 import ElectricExperienceTimeline from "@/components/sections/ElectricExperienceTimeline";
@@ -17,6 +18,7 @@ export default function HomePage() {
       {/* 2. Main Engineering Portfolio Content */}
       <div className="flex flex-col space-y-0">
         <TeslaHero />
+        <AboutMeSection />
         <MagneticFieldSection />
         <CylindricalProjectCarousel />
         <ElectricExperienceTimeline />

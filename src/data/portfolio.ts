@@ -17,17 +17,30 @@ export const PERSONAL_INFO = {
   tagline: "Engineering Intelligence Into Hardware.",
   subTagline:
     "Electronics engineering undergraduate specializing in FPGA development, embedded systems, VLSI design, real-time operating systems, and Edge AI.",
+  bio: "Electronics engineering student at Chennai Institute of Technology specializing in VLSI Design and Technology (CGPA 8.56). Passionate about bridging silicon physics, RTL microarchitectures, and deterministic Edge AI. Experienced in custom CPU RTL design on FPGAs, industrial SMT production lines at Syrma SGS, μT-Kernel 3.0 RTOS porting on Arm Cortex-M85 (Renesas RA8P1), and INT8 quantized neural acceleration on Lattice FPGAs and Hailo-8 NPUs. Team lead for five national and international competition finalist teams, including Winner of the VLSID 2026 Design Contest.",
   institution: "Chennai Institute of Technology",
   degree: "B.E. Electronics Engineering — VLSI Design and Technology",
   period: "2024 – 2028",
   cgpa: "8.56",
+  higherSecondary: {
+    institution: "Velammal Bodhi Campus",
+    period: "2023 – 2024",
+    percentage: "93.6%",
+  },
+  phone: "+91 9843111656",
   email: "senthilkumarm7271@gmail.com",
   github: "https://github.com/Senthil7271",
   linkedin: "https://www.linkedin.com/in/senthil-kumar-m-904118315",
   leetcode: "https://leetcode.com/u/Senthilkumar7271",
   codechef: "https://www.codechef.com/users/sane_door_72",
+  codingStats: {
+    leetcode: { solved: 75, rating: 1324, url: "https://leetcode.com/u/Senthilkumar7271" },
+    codechef: { solved: 100, rating: 825, url: "https://www.codechef.com/users/sane_door_72" },
+    skillrack: { solved: 100 },
+  },
   resumePath: "/documents/Senthil_Kumar_Mahalingam_Resume.pdf",
   photoPlaceholder: "/images/profile/profile-photo.png",
+  leadership: "Team Lead — Across all 5 national & international design competitions (VLSID, TRON, VEGATHON, SEMICON India, IESA)",
   specializations: [
     "FPGA Development",
     "Embedded Systems",
@@ -530,6 +543,17 @@ export const FEATURED_PROJECTS: Project[] = [
 ];
 
 export const ALL_GITHUB_REPOSITORIES: GitHubRepo[] = [
+  {
+    name: "AutoVI-Edge",
+    displayName: "AutoVI Edge: Automotive Defect Detection",
+    description:
+      "Unsupervised PatchCore defect detector on Raspberry Pi 5 & Hailo-8 AI accelerator trained on AWS SageMaker for six automotive components.",
+    language: "Python / C++",
+    stars: 1,
+    url: "https://github.com/Senthil7271",
+    category: "Edge AI",
+    highlights: ["Hailo-8 INT8 NPU", "Raspberry Pi 5", "PatchCore Algorithm", "97.24% AUROC"],
+  },
   {
     name: "edge-ai-wafer-defect-classifier",
     displayName: "Edge-AI Wafer Defect Classifier",
