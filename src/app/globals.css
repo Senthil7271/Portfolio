@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0B0B0A;
+  --bg-secondary: #141411;
+  --bg-elevated: #1D1C17;
+  --electric-yellow: #FACC15;
+  --deep-yellow: #EAB308;
+  --metallic-amber: #D4A017;
+  --electric-white: #FFFDF5;
+  --text-primary: #F5F1E6;
+  --text-secondary: #A6A397;
+  --border-hairline: #34332A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0B0B0A;
+  color: #F5F1E6;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0B0B0A;
+  color: #F5F1E6;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Custom Lightning Cursor Support */
+body.custom-cursor-active,
+body.custom-cursor-active a,
+body.custom-cursor-active button,
+body.custom-cursor-active input,
+body.custom-cursor-active textarea,
+body.custom-cursor-active [role="button"] {
+  cursor: none !important;
+}
+
+/* Laboratory Electrical Grid Background (Subtle Obsidian & Gold) */
+.bg-circuit-grid {
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(250, 204, 21, 0.04) 0%, transparent 60%),
+    linear-gradient(to right, rgba(52, 51, 42, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(52, 51, 42, 0.4) 1px, transparent 1px);
+  background-size: 100% 100%, 48px 48px, 48px 48px;
+}
+
+.bg-circuit-dense {
+  background-image: 
+    linear-gradient(to right, rgba(52, 51, 42, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(52, 51, 42, 0.5) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px;
+}
+
+/* NO GLOWING BORDERS: Replaced with crisp hairline borders & metallic accents */
+
+/* PCB Wire Trace Pulse */
+@keyframes wirePulse {
+  0% {
+    stroke-dashoffset: 200;
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0.2;
+  }
+}
+
+.animate-wire-pulse {
+  stroke-dasharray: 20 80;
+  animation: wirePulse 3s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #34332A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EAB308;
+}
+
+/* Reduced Motion Mode */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
