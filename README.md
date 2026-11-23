@@ -3,7 +3,10 @@
 
 > **"POWERED BY ENGINEERING — FROM ELECTRONS TO INTELLIGENCE."**
 
-An immersive, cinematic, electricity-themed personal engineering portfolio website inspired by Nikola Tesla's electromagnetic inventions and laboratory science, combined with modern hardware engineering.
+An immersive, cinematic, electricity-themed personal engineering portfolio website inspired by Nikola Tesla's electromagnetic inventions and laboratory science, combined with modern semiconductor and hardware engineering.
+
+- **Repository:** [https://github.com/Senthil7271/Portfolio](https://github.com/Senthil7271/Portfolio)
+- **Live Deployment:** [https://senthil7271.github.io/Portfolio/](https://senthil7271.github.io/Portfolio/)
 
 ---
 
@@ -13,93 +16,75 @@ An immersive, cinematic, electricity-themed personal engineering portfolio websi
 - **Specialization:** FPGA Development, Embedded Systems, VLSI Design, Edge AI, and RTOS
 - **Education:** B.E. Electronics Engineering — VLSI Design and Technology (2024–2028)
 - **Institution:** Chennai Institute of Technology (CIT) | **CGPA:** 8.56
-- **Confirmed Honors:** Winner, VLSID 2026 Design Contest | Finalist, TRON Programming Contest 2026 (Renesas) | 2nd Runner, CDAC VEGATHON | Semifinalist (Top 15), SEMICON India 2026 (Applied Materials) | Semifinalist, IESA DeepTech Hackathon 2026
+- **Confirmed Honors:**
+  - 🏆 Winner, VLSID 2026 Design Contest
+  - 🥈 Finalist, TRON Programming Contest 2026 (Renesas)
+  - 🥉 2nd Runner Up, CDAC VEGATHON 2026
+  - 🏅 Semifinalist (Top 15), SEMICON India 2026 (Applied Materials)
+  - ⚡ Semifinalist, IESA DeepTech Hackathon 2026
 - **GitHub:** [github.com/Senthil7271](https://github.com/Senthil7271)
+- **LinkedIn:** [linkedin.com/in/senthil-kumar-m-904118315](https://www.linkedin.com/in/senthil-kumar-m-904118315)
 
 ---
 
-## ⚡ Key Redesign Highlights
+## ⚡ Architecture & Design Highlights
 
-### 1. Custom Lightning Cursor
-- **Pointer Icon:** High-voltage vector lightning bolt with an electric white core (`#EAF8FF`), vivid blue border (`#168BFF`), and arc cyan glow (`#55D6FF`).
-- **Luminous Discharge Trail:** Velocity-responsive filament trail rendered on an optimized GPU-accelerated canvas using `requestAnimationFrame` and mutable refs.
-- **Dynamic Cursor States:**
-  - *Normal:* Precision pointer with tip hotspot.
-  - *Interactive Controls:* Rotating electromagnetic field ring.
-  - *Project Cards:* Electric filaments bridging to card edges.
-  - *Carousel Dragging:* High-intensity charged grip indicator.
-  - *Mouse Down / Click:* Instantaneous electric spark discharge.
-- Automatically disabled on touch devices and respects `prefers-reduced-motion: reduce`.
+### 1. Unified Obsidian & Electric Yellow Identity
+- **Palette:** `#0B0B0A` (obsidian black), `#141411` (dark laboratory surface), `#FACC15` (electric yellow), `#EAB308` (deep yellow), `#D4A017` (metallic amber), `#F5F1E6` (warm white text).
+- Zero generic neon glows; clean hairline circuit borders and physically inspired metallic reflections.
 
-### 2. Upgraded Cinematic Hero
-- **Editorial Headline:** **ENGINEERING INTELLIGENCE INTO HARDWARE.** with controlled electric-blue activation.
-- **Electromagnetic Field Portrait Frame:** Genuine portrait slot with rotating stator flux rings and polyphase magnetic nodes behind the image without obscuring facial identity.
-- **Timed Entrance Sequence:** Copper busbar pulse (0.4s) &rarr; controlled electrical arcs (1.1s) &rarr; kinetic title reveal (1.8s) &rarr; portrait illumination (2.6s) with a visible "Skip Intro" option.
+### 2. Full-Screen Cinematic Wardenclyffe Tower Intro
+- Procedural 3D Three.js model of Tesla's Wardenclyffe Tower with octagonal framework, copper collar rings, and toroidal cupola electrode.
+- Multi-stage midpoint displacement lightning generator discharging electric yellow arcs across the viewport.
+- Accessible "Skip Intro" option and discreet floating replay control.
 
-### 3. Interactive 3D Cylindrical Project Carousel
-- Arranged around an invisible vertical cylinder ($R \approx 520\text{px}$):
-  $$\theta_i = i \cdot \frac{\pi}{2} + \text{rotation}, \quad X_i = R \sin(\theta_i), \quad Z_i = R \cos(\theta_i) - R$$
-- **Controls:** Smooth horizontal pointer/touch dragging, velocity inertia, spring-damper friction, and shortest-angle magnetic snapping to the active card.
-- Supports keyboard navigation (Left / Right arrow keys) and direct exhibit selection.
-- Accessible flat view toggle for low-power devices.
+### 3. Streamlined 3-Part Navigation Bar
+- **Left:** Compact `SK ⚡` logo linking to the top.
+- **Center:** Single-line, non-wrapping navigation: `Home`, `Projects`, `Experience`, `Skills`, `Achievements`, `Education`, `Contact`.
+- **Right:** Solid electric yellow `Resume ↗` action button.
+- Clean responsive layout for desktop, tablet, and mobile.
 
-### 4. 4 Detailed Procedural 3D Tesla Inventions
-Each flagship project is anchored by a high-detail procedural 3D model with realistic materials (polished copper coils, brass pillars, cast iron, steel shafts, and luminous electrical discharges):
-1. **The Resonant Tesla Coil (1891)** &rarr; *FPGA AI Surveillance* (MobileNetV2 SSD on Lattice CertusPro NX).
-2. **The AC Induction Motor (1888)** &rarr; *μT-Kernel 3.0 on Renesas RA8P1* (Arm Cortex-M85 + Ethos-U55 NPU).
-3. **The Polyphase AC Generator (1887)** &rarr; *KNN Classifier on ZedBoard FPGA* (3-stage pipelined Verilog RTL).
-4. **Resonant Wireless Energy Transmission (1893)** &rarr; *Semiconductor Wafer Defect Classification* (INT8 quantized MobileNetV2 on Arm Cortex-M7).
-- Each project includes a historical "Tesla Inspiration" technical note explaining the conceptual metaphor while keeping Tesla's history distinct from Senthil's modern engineering implementations.
-
-### 5. Visually Unique Laboratory Sections
-- **Section A — Rotating Magnetic Fields:** Interactive 4-quadrant electromagnetic stator chamber mapping FPGA, VLSI, Embedded Systems, and Edge AI.
-- **Section B — Tesla Cylindrical Exhibition:** The 3D rotating cylinder project gallery.
-- **Section C — High-Voltage Transmission Timeline:** Copper transmission busbar feeding into industrial manufacturing (Syrma SGS) and silicon research (CIT VLSI Lab) substations.
-- **Section D — Electrical Laboratory Control Board:** Rotary selector switches, active CRT oscilloscope with live waveform triggers (Square, Pulse, Sine, Sawtooth), and directional skill links.
-- **Section E — Laboratory Switchboard:** High-voltage knife-switch instrument nodes for the 5 confirmed resume honors.
-- **Section F — Circuit Blueprint Sheets:** Cyan-print technical blueprint sheets for academic degrees and accredited certifications.
-- **Section G — Close the Circuit:** Large interactive high-voltage knife switch breaker that energizes the direct transmission terminal. Headline: **LET'S BUILD THE NEXT BREAKTHROUGH.**
-
-### 6. All 14 GitHub Repositories Catalog (`/projects`)
-- Complete index of all 14 repositories from [github.com/Senthil7271](https://github.com/Senthil7271) with search and domain filtering (*FPGA & Hardware, Embedded & RTOS, Edge AI, VLSI & SoC Design*).
+### 4. Interactive 3D Cylindrical Project Carousel
+- Flagship projects mapped along a mathematical cylindrical coordinate ring with pointer inertia, touch dragging, and magnetic snapping.
+- Procedural 3D Tesla invention models accompanying verified FPGA, RTOS, and Edge AI case studies.
 
 ---
 
-## 🛠️ Technology Stack
+## 🚀 Live Hosting Instructions
 
-- **Framework:** Next.js 14 (App Router, Static Site Generation)
-- **Language:** TypeScript 5 (Strict type checking, zero errors)
-- **Styling:** Tailwind CSS with custom electrical utilities
-- **3D Graphics:** Three.js & WebGL with ACESFilmic tone mapping
-- **Icons:** Lucide React
-- **Typography:** `@next/font/google` (Space Grotesk, Inter, JetBrains Mono)
+### Option 1: GitHub Pages (Automatic via GitHub Actions)
+1. Go to your repository on GitHub: [https://github.com/Senthil7271/Portfolio](https://github.com/Senthil7271/Portfolio)
+2. Navigate to **Settings** &rarr; **Pages** (under "Code and automation" in the left sidebar).
+3. Under **Build and deployment** &rarr; **Source**, select:
+   **GitHub Actions**
+4. That's it! The included `.github/workflows/deploy.yml` workflow will automatically build and publish the portfolio to:
+   `https://senthil7271.github.io/Portfolio/`
+
+### Option 2: 1-Click Vercel Deployment
+1. Visit [vercel.com](https://vercel.com) and click **"Add New Project"**.
+2. Select your repository: `Senthil7271/Portfolio`.
+3. Click **"Deploy"**. Vercel detects Next.js automatically and provides global edge deployment.
 
 ---
 
-## 🚀 Getting Started
+## 🛠 Local Development Setup
 
-### Installation
 ```bash
-# Clone or navigate to the workspace
+# Clone the repository
+git clone https://github.com/Senthil7271/Portfolio.git
 cd Portfolio
 
 # Install dependencies
 npm install
-```
 
-### Running Locally
-```bash
+# Start development server
 npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+# Open http://localhost:3000 in your browser
 
-### Production Build
-```bash
+# Build static production export
 npm run build
-npm run start
 ```
 
 ---
 
-## 🛡️ License
-Created for Senthil Kumar Mahalingam. MIT License.
+© 2026 Senthil Kumar Mahalingam. All rights reserved.
